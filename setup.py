@@ -4,15 +4,15 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='eve-negotiable-auth',
-    version='0.9.6',
-    description='Eve Negotiable authentication',
+    name='hypermea-negotiable-auth',
+    version='0.9.7',
+    description='Hypermea negotiable authentication',
     long_description= open('README.md', 'r').read(),
     long_description_content_type="text/markdown",
     author='Michael Ottoson',
     author_email='michael@pointw.com',
-    url='https://github.com/pointw-dev/eve-negotiable-auth',
-    keywords=['eve', 'api', 'rest', 'auth', 'http'],
+    url='https://github.com/pointw-dev/hypermea-negotiable-auth',
+    keywords=['hypermea', 'eve', 'api', 'rest', 'auth', 'http'],
     packages=find_packages(),
     license='MIT',
     install_requires=['eve>=0.8.0', 'authparser>=1.0'],

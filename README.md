@@ -1,5 +1,6 @@
-# eve-negotiable-auth
-An advanced yet easy to use auth module for APIs built on [Eve](https://docs.python-eve.org/en/stable/).  
+# hypermea-negotiable-auth
+
+An advanced yet easy to use auth module for APIs built for [hypermea](https://github.com/pointw-dev/hypermea) and for [Eve](https://docs.python-eve.org/en/stable/).  
 
 The auth class that ships with Eve, `BasicAuth`, allows users of your API to authenticate with [Basic Authentication](https://tools.ietf.org/html/rfc7617).  The `NegotiableAuth` class in this package extends this to allow the user to choose from any authentication scheme your API supports.  This allows for easy configuration and handling of multiple auth schemes - including schemes like [Digest](https://tools.ietf.org/html/rfc7616) which require negotiation.
 
@@ -46,7 +47,7 @@ def handle_bearer(token, **kwargs):
 The best place to do this is above the class definition you will create in step 3.  I will start by creating a file named **`my_auth.py`**
 
 ```python
-from eve_negotiable_auth import NegotiableAuth, AUTH_PARSER
+from hypermea_negotiable_auth import NegotiableAuth, AUTH_PARSER
 from --wherever you defined your handler-- import handle_bearer
 
 AUTH_PARSER.add_handler('Bearer', handle_bearer)
@@ -61,7 +62,7 @@ The `NegotiableAuth` class is an abstract base class and cannot be used on its o
 Building on the **`my_auth.py`** we started in step 2:
 
 ```python
-from eve_negotiable_auth import NegotiableAuth, AUTH_PARSER
+from hypermea_negotiable_auth import NegotiableAuth, AUTH_PARSER
 from --wherever you defined your handler-- import handle_bearer
 
 class MyAuth(NegotiableAuth):
