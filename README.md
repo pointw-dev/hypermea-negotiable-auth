@@ -1,6 +1,6 @@
 # hypermea-negotiable-auth
 
-An advanced yet easy to use auth module for APIs built for [hypermea](https://github.com/pointw-dev/hypermea) and for [Eve](https://docs.python-eve.org/en/stable/).  
+An advanced yet easy to use auth module for APIs built using [hypermea](https://github.com/pointw-dev/hypermea) or [Eve](https://docs.python-eve.org/en/stable/).
 
 The auth class that ships with Eve, `BasicAuth`, allows users of your API to authenticate with [Basic Authentication](https://tools.ietf.org/html/rfc7617).  The `NegotiableAuth` class in this package extends this to allow the user to choose from any authentication scheme your API supports.  This allows for easy configuration and handling of multiple auth schemes - including schemes like [Digest](https://tools.ietf.org/html/rfc7616) which require negotiation.
 
